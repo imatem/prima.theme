@@ -2,38 +2,140 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="less/prima.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 0px;
+                padding-bottom: 20px;
+            }
+        </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
     <title>Prima Theme</title>
   </head>
   <body>
-    <header id="content-header">
-      <div id="logo">
+    <header id="content-header" class="container" >
+      <div class="row">
+        <div class="col-md-5">
+        <!-- <h1>PRIMA 2017</h1> -->
+        <img class="img-responsive" src="img/name.png"/>
+        The Third Pacific Rim Mathematical Association Congress
+        </div>
+        <div class="col-md-2">
+        <p style="padding-top:2em;">
+        Summer 2017<br>
+        Oaxaca, Mexico
+        </p>
+        </div>
+        <div id="logo" class="col-md-4">
+          <img class="img-responsive" src="img/alebrije.jpg"/>
+        </div>
+        <div id="sitemap-login" class="col-md-1">
+          <ul>
+            <li><strong>SITEMAP</strong></li>
+            <li><strong>LOGIN</strong></li>
+          </ul>
+        </div>
       </div>
-      <div id="sitemap">
+      <div id="navigation" class="navbar navbar-fixed" role="navigation" >
+      <!-- #002b7a -->
+      <div class="container" style="background-color:brown;">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" style="color: #FFFFFF;">Home</a>
+        </div>
       </div>
-      <div id="login">
-      </div>
-      <div id="navigation">
       </div>
     </header>
 
     <div class="main-content">
       <div class="above-content">
-        <div class="roller">
-        </div>
-        <div class="important-dates">
-        </div>
+      <!-- antiquewhite -->
+        <div class="jumbotron" style="background-color: antiquewhite;">
+          <div class="container">
+            <div class="row">
+              <div class="roller col-md-8">
+              <h2>PRIMA 2017</h2>
+              <p class="text-justify">
+                The Third Pacific Rim Mathematical Association (PRIMA) Congress will be held at Oaxaca in Mexico, on summer, 2017.PRIMA is an association of mathematical sciences institutes, departments and societies from around the Pacific Rim, established in 2005 with the aim of promoting and facilitating the development of the mathematical sciences throughout the Pacific Rim region.
+              </p>
+              </div>
+              <!-- #f0a50e -->
+              <div id="important-dates" class="col-md-4" style="background-color: white;">
+              <h2>Important Dates</h2>
+              <table class="table">
+                <tbody>
+                <tr>
+                <td>Tour Reservation</td><td>Jul. 23 2016</td>
+                </tr>
+                <tr>
+                <td>Paper Submission</td><td>Jul. 23 2016</td>
+                </tr>
+                <tr>
+                <td>Abstracts Submission</td><td>Jul. 23 2016</td>
+                </tr>
+                <tr>
+                <td>Paper submission for invited speakers</td><td>Jul. 23 2016</td>
+                </tr>
+                </tbody>
+              </table>
+              </div>
+            </div><!--End row -->
+
+          </div>
+        </div><!--End jumbotron -->
+
       </div><!-- End above-content-->
 
-      <div class="content">
+      <div class="content container ">
       </div>
 
-      <div class="bellow-content">
+      <!-- <hr> -->
+
+      <div id="bellow-content" class="container">
+          <div class="row">
+            <div class="col-md-3">
+            <p class="text-center" style="color: #FFFFFF; background-color: #0c61a4;height:8em;">
+              <strong>Register</strong>
+              <br/>
+              Register now to enjoy early bird savings!
+            </p>
+            </div>
+            <div class="col-md-3">
+            <!-- #cc1e77 -->
+              <p class="text-center" style="color: #FFFFFF; background-color: #cf499c;height:8em;">
+              <strong>Book your accommodation</strong>
+              <br/>
+              Reserve hotel rooms now at special congress rates!
+              </p>
+            </div>
+            <div class="col-md-3">
+            <p class="text-center " style="color: #FFFFFF; background-color: #98b336; height:8em">
+              <strong>Call for Abstract</strong>
+              <br/>
+              Submit your abstracs now
+            </p>
+            </div>
+            <div class="col-md-3">
+            <p class="text-center" style="color: #FFFFFF; background-color: #4e2396; height:8em">
+              Scientific Program
+              <br/>
+              <br/>
+            </p>
+            </div>
+          </div><!--End row -->
+
       </div><!-- End bellow-content-->
     </div><!--End main-content-->
 
-    <footer id="footer-content">
+    <hr>
+
+    <footer id="footer-content" class="container">
       <div class="sponsors">
+      <ul class="list-inline">
+        <li>IM UNAM</li>
+        <li>CCM</li>
+      </ul>
       </div>
+      <p class="text-center">Created by Inform&aacute;tica Acad&eacute;mica, Instituto de Matem&aacute;ticas, UNAM</p>
     </footer>
   </body>
 </html>
