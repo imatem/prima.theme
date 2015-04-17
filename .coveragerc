@@ -1,0 +1,6 @@
+[report]
+include =
+    src/prima/*
+omit =
+    */test*
+    */upgrades/*
