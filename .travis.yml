@@ -15,4 +15,4 @@ after_success:
 notifications:
   email:
     - gil@im.unam.mx
-    - adriana.rv@im.unam.mx
+    - adriana.rv@gmail.com
