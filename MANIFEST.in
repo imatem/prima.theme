@@ -1,0 +1,3 @@
+graft src/prima
+graft docs/
+include *.cfg *.rst *.in
