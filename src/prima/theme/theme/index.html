@@ -1,173 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Starter Template for Bootstrap</title>
-
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-  <style type="text/css">
-    html body {
-      /* Space for the bootstrap top navigation bar */
-      padding-top: 70px;
-      font-size: 15px;
-    }
-    /* Top Navigation css adjustments */
-    .navbar .selected a {
-      color: #fff;
-      background: #080808;
-    }
-    /* Edit Bar css adjustments */
-    .nav-tabs .selected {
-      border-width: 1px;
-      border-style: solid;
-      border-color: #DDD #DDD transparent;
-      -moz-border-top-colors: none;
-      -moz-border-right-colors: none;
-      -moz-border-bottom-colors: none;
-      -moz-border-left-colors: none;
-      border-bottom: 1px solid #fff;
-    }
-    .nav-tabs .selected a {
-      margin-right: 0;
-    }
-    .pull-left, .pull-right {
-      width: 50%;
-    }
-    .pull-right > li {
-      float: right;
-      display: inline-block;
-    }
-    #contentMenuAddNew li a {
-      width: 100%;
-    }
-  </style>
-
-</head>
-
-<body>
-
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Plone</a>
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="less/prima.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 0px;
+                padding-bottom: 20px;
+            }
+        </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <title>Prima Theme</title>
+  </head>
+  <body>
+    <header id="content-header" class="container" >
+      <div class="row">
+        <div class="col-md-5">
+        <!-- <h1>PRIMA 2017</h1> -->
+        <img class="img-responsive" src="img/name.png"/>
+        The Third Pacific Rim Mathematical Association Congress
+        </div>
+        <div class="col-md-2">
+        <p style="padding-top:2em;">
+        Summer 2017<br>
+        Oaxaca, Mexico
+        </p>
+        </div>
+        <div id="logo" class="col-md-4">
+          <img class="img-responsive center-block" src="img/alebrije.jpg"/>
+        </div>
+        <div id="sitemap-login" class="col-md-1">
+          <ul style="padding-top:2em;">
+            <li><strong>SITEMAP</strong></li>
+            <li><strong>LOGIN</strong></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse">
-        <ul id="navbar" class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              <span id="user-name">Username</span>
-              <span class="caret"></span>
-            </a>
-            <ul id="action-menu-content" class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
+      <div id="navigation" class="navbar navbar-fixed" role="navigation" >
+      <!-- #002b7a -->
+      <div class="container" style="background-color:brown;">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" style="color: #FFFFFF;">Home</a>
+        </div>
+      </div>
+      </div>
+    </header>
 
-  <div class="container">
+    <div class="main-content">
+      <div class="above-content">
+      <!-- antiquewhite -->
+        <div class="jumbotron" style="background-color: antiquewhite;">
+          <div class="container">
+            <div class="row">
+              <div class="roller col-md-8">
+              <h2>PRIMA 2017</h2>
+              <p class="text-justify">
+                The Third Pacific Rim Mathematical Association (PRIMA) Congress will be held at Oaxaca in Mexico, on summer, 2017.PRIMA is an association of mathematical sciences institutes, departments and societies from around the Pacific Rim, established in 2005 with the aim of promoting and facilitating the development of the mathematical sciences throughout the Pacific Rim region.
+              </p>
+              </div>
+              <!-- #f0a50e -->
+              <div id="important-dates" class="col-md-4" style="background-color: white;">
+              <h2>Important Dates</h2>
+              <table class="table">
+                <tbody>
+                <tr>
+                <td>Tour Reservation</td><td>Jul. 23 2016</td>
+                </tr>
+                <tr>
+                <td>Paper Submission</td><td>Jul. 23 2016</td>
+                </tr>
+                <tr>
+                <td>Abstracts Submission</td><td>Jul. 23 2016</td>
+                </tr>
+                <tr>
+                <td>Paper submission for invited speakers</td><td>Jul. 23 2016</td>
+                </tr>
+                </tbody>
+              </table>
+              </div>
+            </div><!--End row -->
 
-    <ol id="breadcrumbs" class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Library</a></li>
-      <li class="active">Data</li>
-    </ol>
+          </div>
+        </div><!--End jumbotron -->
 
-    <div class="row">
-      <div class="col-md-12">
-        <ul id="contentViews" class="nav nav-tabs pull-left">
-          <li role="presentation" class="active"><a href="#">Contents</a></li>
-          <li role="presentation"><a href="#">Edit</a></li>
-          <li role="presentation"><a href="#">Sharing</a></li>
-        </ul>
-        <ul class="nav nav-tabs pull-right">
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              <span id="currentWorkflowState">State</span>
-              <span class="caret"></span>
-            </a>
-            <ul id="contentMenuWorkflowState" class="dropdown-menu dropdown-menu-right" role="menu">
-              <li>
-                <a href="#">One</a>
-              </li>
-              <li>
-                <a href="#">Two</a>
-              </li>
-            </ul>
-          </li>
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              Add new <span class="caret"></span>
-            </a>
-            <ul id="contentMenuAddNew" class="dropdown-menu dropdown-menu-right" role="menu">
-              <li>
-                <a href="#">One</a>
-              </li>
-              <li>
-                <a href="#">Two</a>
-              </li>
-            </ul>
-          </li>
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              Display <span class="caret"></span>
-            </a>
-            <ul id="contentMenuDisplay" class="dropdown-menu dropdown-menu-right" role="menu">
-              <li>
-                <a href="#">One</a>
-              </li>
-              <li>
-                <a href="#">Two</a>
-              </li>
-            </ul>
-          </li>
+      </div><!-- End above-content-->
 
-        </ul>
+      <div class="content container ">
       </div>
 
-    </div>
+      <!-- <hr> -->
 
-    <div class="row">
-      <div id="content" class="col-md-12">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      <div id="bellow-content" class="container">
+          <div class="row">
+            <div class="col-md-3">
+            <p class="text-center" style="color: #FFFFFF; background-color: #0c61a4;height:4px;">
+            </p>
+            <p>
+              <strong>Register</strong>
+              <br/>
+              Register now to enjoy early bird savings!
+            </p>
+            </div>
+            <div class="col-md-3">
+            <!-- #cc1e77 -->
+              <p class="text-center" style="color: #FFFFFF; background-color: #cf499c;height:4px;">
+              </p>
+              <p>
+              <strong>Book your accommodation</strong>
+              <br/>
+              Reserve hotel rooms now at special congress rates!
+              </p>
+            </div>
+            <div class="col-md-3">
+            <p class="text-center " style="color: #FFFFFF; background-color: #98b336; height:4px">
+            </p>
+            <p>
+              <strong>Call for Abstract</strong>
+              <br/>
+              Submit your abstracs now
+            </p>
+            </div>
+            <div class="col-md-3">
+            <p class="text-center" style="color: #FFFFFF; background-color: #4e2396; height:4px">
+            </p>
+            <p>
+              <strong>Scientific Program</strong>
+              <br/>
+              <br/>
+            </p>
+            </div>
+          </div><!--End row -->
+
+      </div><!-- End bellow-content-->
+    </div><!--End main-content-->
+
+    <hr>
+
+    <footer id="footer-content" class="container">
+      <div class="sponsors">
+      <ul class="list-inline">
+        <li>IM UNAM</li>
+        <li>CCM</li>
+      </ul>
       </div>
-    </div>
-
-    <footer>
-      <p>&copy; Company 2015</p>
+      <p class="text-center">Created by Inform&aacute;tica Acad&eacute;mica, Instituto de Matem&aacute;ticas, UNAM</p>
     </footer>
-
-  </div><!-- /.container -->
-
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-</body>
+  </body>
 </html>
