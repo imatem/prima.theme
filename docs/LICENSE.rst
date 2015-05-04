@@ -1,4 +1,4 @@
-bobtemplates.plone Copyright 2015, gil-cano
+prima.theme Copyright 2015, imatem-unam
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
