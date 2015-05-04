@@ -7,7 +7,11 @@
   <!-- Apply the following rules to standard Plone pages -->
   <rules css:if-content="#visual-portal-wrapper">
 
-    <theme href="index.html" />
+    <theme href="index.html" css:if-content="body.section-front-page"/>
+
+    <drop css:content="div#viewlet-below-content-title" css:if-content="body.section-front-page"/>
+
+    <theme href="base.html" />
 
     <!-- Replace title with Plone's page title  -->
     <!-- <replace
@@ -35,10 +39,10 @@
       />
 
     <!-- Copy script tags from Plone head to end of body -->
-    <!-- <after
+    <after
       css:content="html head script"
       css:theme-children="html body"
-      /> -->
+      />
 
     <!-- LOGO -->
     <!-- <copy
@@ -82,37 +86,37 @@
     <drop css:content="span#breadcrumbs-you-are-here" /> -->
 
     <!-- EDIT BAR (CONTENT VIEWS) -->
-    <!-- <replace
+    <replace
       css:content-children="#content-views"
       css:theme-children="#contentViews"
-      /> -->
+      />
 
     <!-- EDIT BAR (DISPLAY) -->
-    <!-- <replace
+    <replace
       css:content-children="#plone-contentmenu-display .actionMenuContent ul"
       css:theme-children="#contentMenuDisplay"
-      /> -->
+      />
 
     <!-- EDIT BAR (ADD NEW) -->
-    <!-- <replace
+    <replace
       css:content-children="#plone-contentmenu-factories .actionMenuContent ul"
       css:theme-children="#contentMenuAddNew"
-      /> -->
+      />
 
     <!-- EDIT BAR (WORKFLOW STATE) -->
-    <!-- <replace
+    <replace
       css:content-children="#plone-contentmenu-workflow .actionMenuContent ul"
       css:theme-children="#contentMenuWorkflowState"
-      /> -->
+      />
     <!-- copy current workflow state into the -->
-    <!-- <replace
+    <replace
       css:content="#plone-contentmenu-workflow .actionMenuHeader a span"
       css:theme="#currentWorkflowState"
-      /> -->
+      />
     <!-- drop Plone dropdown arrow -->
-    <!-- <drop
+    <drop
       css:content="#plone-contentmenu-workflow .arrowDownAlternative"
-      /> -->
+      />
 
     <!-- CONTENT -->
     <replace
@@ -145,6 +149,12 @@
       css:content-children="dl.portlet-static-call-for-abstracs"
       css:theme-children="#programm"
       />
+
+    <replace
+      css:content-children="dl.portletNews"
+      css:theme-children="#important-dates"
+      />
+
 
 <!--
 portlet-static-register
