@@ -151,7 +151,7 @@
       />
 
     <replace
-      css:content-children="dl.portletNews"
+      css:content-children="dl.portlet-collection-important-dates"
       css:theme-children="#important-dates"
       />
 
