@@ -1,16 +1,38 @@
 <!doctype html>
 <html>
   <head>
-
-    <link rel="stylesheet" type="text/css" href="less/prima.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="less/prima.css" /> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
         <style>
-            body {
-                padding-top: 0px;
+            html body {
+                padding-top: 5px;
                 padding-bottom: 20px;
+                font-size: 14px;
+            }
+            #portal-globalnav, #portal-globalnav li a{
+              background-color: brown;
+              color: white;
+              font-size: 14px;
+            }
+            #portal-globalnav a:hover{
+              background-color: white;
+              color: brown;
+            }
+
+            #portal-globalnav .selected a{
+              background-color: #C06A6A;
+              color: white;
+            }
+            #content{
+                line-height: 1.5em;
+                font-size: 100%;
+                padding-right:15px;
+                padding-left:15px;
+                margin-right:auto;
+                margin-left:auto
             }
         </style>
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <title>Prima Theme</title>
@@ -53,9 +75,9 @@
           </ul> <!--End nav nav-bar-->
         </div> <!--sitemap-login-->
       </div><!--End row-->
-      <nav id="navigation" class="navbar navbar-fixed" role="navigation" >
+      <nav id="portal-globalnav" class="navbar navbar-fixed" role="navigation" >
       <!-- #002b7a -->
-        <div class="container" style="background-color:brown;">
+        <div class="container">
           <div class="navbar-header">
             <!-- <a class="navbar-brand" href="#" style="color: #FFFFFF;">Home</a> -->
             <div class="collapse navbar-collapse">
