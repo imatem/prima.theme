@@ -1,10 +1,20 @@
 <!doctype html>
 <html>
   <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <title>Prima Theme</title>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider();
+      });
+    </script>
     <!-- <link rel="stylesheet" type="text/css" href="less/prima.css" /> -->
         <style>
             html body {
@@ -72,9 +82,9 @@
               font-size:2em;
             }
         </style>
-    <title>Prima Theme</title>
   </head>
   <body>
+
     <header id="content-header" class="container" >
       <div id="portal-logo" class="row">
         <div class="col-md-5">
@@ -137,34 +147,34 @@
         <div  class="jumbotron" style="background-color: antiquewhite;">
           <div  class="container">
             <div class="row">
-              <div id="carrusel" class="roller col-md-7">
-              <!-- <h2>PRIMA 2017</h2>
-              <p class="text-justify">
-                The Third Pacific Rim Mathematical Association (PRIMA) Congress will be held at Oaxaca in Mexico, on summer, 2017.PRIMA is an association of mathematical sciences institutes, departments and societies from around the Pacific Rim, established in 2005 with the aim of promoting and facilitating the development of the mathematical sciences throughout the Pacific Rim region.
-              </p> -->
+
+              <div class="col-md-8">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <img src="images/oaxaca-ciudad.jpg" />
+                    </li>
+                    <li>
+                      <img src="images/oaxaca-mezcal.jpg" />
+                    </li>
+                  </ul>
+                </div>
               </div>
+
               <!-- #f0a50e -->
               <div id="important-dates" class="col-md-4" style="background-color: white;">
-              <h2>Important Dates</h2>
-              <table class="table">
-                <tbody>
-                <tr>
-                <td>Tour Reservation</td><td>Jul. 23 2016</td>
-                </tr>
-                <tr>
-                <td>Paper Submission</td><td>Jul. 23 2016</td>
-                </tr>
-                <tr>
-                <td>Abstracts Submission</td><td>Jul. 23 2016</td>
-                </tr>
-                <tr>
-                <td>Paper submission for invited speakers</td><td>Jul. 23 2016</td>
-                </tr>
-                </tbody>
-              </table>
+                <h2>Important Dates</h2>
+                <table class="table">
+                  <tbody>
+                    <tr><td>Tour Reservation</td><td>Jul. 23 2016</td></tr>
+                    <tr><td>Paper Submission</td><td>Jul. 23 2016</td></tr>
+                    <tr><td>Abstracts Submission</td><td>Jul. 23 2016</td></tr>
+                    <tr><td>Paper submission for invited speakers</td><td>Jul. 23 2016</td></tr>
+                  </tbody>
+                </table>
               </div>
-            </div><!--End row -->
 
+            </div><!--End row -->
           </div>
         </div><!--End jumbotron -->
 

@@ -8,6 +8,7 @@
   <rules css:if-content="#visual-portal-wrapper">
 
     <theme href="index.html" css:if-content="body.section-front-page"/>
+    <theme href="base.html" />
 
     <drop css:content="div#viewlet-below-content-title" css:if-content="body.section-front-page"/>
 
@@ -20,8 +21,6 @@
                 <li><xsl:copy-of css:select=".itemPadding img"/></li>
          </xsl:for-each>
     </replace>
-
-    <theme href="base.html" />
 
     <!-- Replace title with Plone's page title  -->
     <replace
