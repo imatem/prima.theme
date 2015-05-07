@@ -11,12 +11,15 @@
 
     <drop css:content="div#viewlet-below-content-title" css:if-content="body.section-front-page"/>
 
-
-    <before css:theme-children="#carrusel"
-        css:content-children="#content-core"
-        href="/carousel?ajax_load=1"
-        css:if-content=".section-front-page" />
-
+    <!--
+    Note: This rule uses the if-content=".carouselWrapper" directive to ensure
+    that it will only be triggered when there is a carousel present on the page.
+    -->
+    <replace css:theme-children="ul.slides" css:if-content=".carouselWrapper">
+        <xsl:for-each css:select=".tileItem">
+                <li><xsl:copy-of css:select=".itemPadding img"/></li>
+         </xsl:for-each>
+    </replace>
 
     <theme href="base.html" />
 
@@ -183,6 +186,10 @@
       css:theme-children="#pscientific-program"
       />
 
+    <replace
+      css:content-children="dl.portlet-collection-important-dates"
+      css:theme-children="#important-dates"
+      />
 
 <!--
 portlet-static-register
