@@ -16,7 +16,7 @@
             #portal-globalnav, #portal-globalnav li a{
               background-color: brown;
               color: white;
-              font-size: 14px;
+              font-size: 12px;
             }
             #portal-globalnav a:hover{
               background-color: white;
@@ -27,6 +27,43 @@
               background-color: #C06A6A;;
               color: white;
             }
+
+            #edit-bar{
+              font-size: 14px;
+              min-height: 3.4em;
+            }
+            #edit-bar li {
+              list-style: none;
+            }
+
+            #edit-bar a, a:link{
+                text-decoration: none;
+                border-bottom:0px;
+            }
+
+            #edit-bar .contentViews > li,
+            #contentActionMenus > li {
+                display: inline-block;
+            }
+
+            #contentActionMenus > li {
+                float: right;
+                padding-left: 0.8em;
+            }
+
+            #contentActionMenus dl.actionMenu {
+                margin: 0;
+                padding: 0;
+            }
+
+            #edit-bar .actionMenuContent ul {
+                margin-left: 0;
+            }
+
+            /*.container {
+              width: 100%;
+            }*/
+
 
             #content{
                 line-height: 1.5em;
@@ -171,18 +208,21 @@
       </div><!-- End above-content-->
 
 
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div id="edit-bar" class="col-md-12">
           </div>
         </div>
-      </div><!--End menu container -->
+      </div> --><!--End menu container-->
 
+      <!-- <div id="edit-bar" tal:condition="view/can_edit">
+      </div> -->
 
-      <div id="content" class="content container ">
+      <div id="content" class="content container">
+      <!-- <div id="edit-bar" class="content">
+      </div> -->
+
       </div>
-
-      <!-- <hr> -->
 
       <div id="below-content" class="container">
         <div class="row">
