@@ -46,12 +46,10 @@ setup(
         'z3c.jbot',
         'plone.app.theming',
         'plone.app.themingplugins',
-        'collective.easyslideshow',
     ],
     extras_require={
         'test': [
             'plone.app.testing',
-            'plone.app.contenttypes',
             'plone.app.robotframework[debug]',
         ],
     },
