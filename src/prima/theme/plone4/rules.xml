@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- theme wrapper, to prevent theming ZMI -->
+    <rules css:if-content="#visual-portal-wrapper">
+        <!-- define Theme template for front-page -->
+        <theme href="index.html" css:if-content="body.section-front-page" />
+        <!-- define Theme template for other pages -->
+        <theme href="prima.html" />
+
+        <!--
+        Note: This rule uses the if-content=".carouselWrapper" directive to ensure
+        that it will only be triggered when there is a carousel present on the page.
+        -->
+        <replace css:theme-children="ul.slides" css:if-content=".carouselWrapper">
+            <xsl:for-each css:select=".tileItem">
+                    <li><xsl:copy-of css:select=".itemPadding img"/></li>
+             </xsl:for-each>
+        </replace>
+
+    </rules>
+</rules>
