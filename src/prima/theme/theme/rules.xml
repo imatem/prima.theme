@@ -93,7 +93,7 @@
 
     <replace
       css:content-children="#portal-globalnav"
-      css:theme="#navbar"
+      css:theme-children="#navbar"
       />
 
     <!-- LOGIN (FOR ANONYMOUS USERS) -->
