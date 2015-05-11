@@ -176,6 +176,9 @@ portlet-static-call-for-abstracs -->
       <xsl:if test="@id!='portaltab-index_html-level1'">
         <xsl:attribute name="class">dropdown</xsl:attribute>
       </xsl:if>
+      <xsl:if test="@class[contains(., 'selected')]">
+        <xsl:attribute name="class">dropdown selected</xsl:attribute>
+      </xsl:if>
       <a>
         <xsl:if test="@id!='portaltab-index_html-level1'">
           <xsl:attribute name="class">dropdown-toggle</xsl:attribute>
