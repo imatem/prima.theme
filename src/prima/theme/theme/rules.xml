@@ -17,9 +17,9 @@
     that it will only be triggered when there is a carousel present on the page.
     -->
     <replace css:theme-children="ul.slides" css:if-content=".carouselWrapper">
-        <xsl:for-each css:select=".tileItem">
-                <li><xsl:copy-of css:select=".itemPadding img"/></li>
-         </xsl:for-each>
+      <xsl:for-each css:select=".tileItem">
+        <li><xsl:copy-of css:select=".itemPadding img"/></li>
+      </xsl:for-each>
     </replace>
 
     <!-- Replace title with Plone's page title  -->
@@ -48,18 +48,17 @@
       />
 
     <!-- Copy script tags from Plone head to end of body -->
-<!--     <after
+    <!-- <after
       css:content="html head script"
       css:theme-children="html body"
-      />
- -->
+      /> -->
+
     <!-- skip portal_javascripts/Sunburst%20Theme/++resource++plone.app.jquery.js -->
     <after css:theme-children="html body">
       <xsl:for-each css:select="html head">
           <xsl:copy-of select="script[position() != 1]"/>
       </xsl:for-each>
     </after>
-
 
     <!-- LOGO -->
     <!-- <copy
@@ -79,7 +78,7 @@
       css:theme-children="#content-header"
       /> -->
 
-      <replace
+    <replace
       css:content="#portal-top"
       css:theme=".content-header"
       />
