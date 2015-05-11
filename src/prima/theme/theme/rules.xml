@@ -196,6 +196,17 @@ portlet-static-call-for-abstracs -->
           <xsl:attribute name="class">dropdown-menu</xsl:attribute>
           <xsl:attribute name="role">menu</xsl:attribute>
           <xsl:attribute name="aria-labelledby"><xsl:value-of select="./@id" /></xsl:attribute>
+          <xsl:for-each select="ul/li">
+            <li>
+              <xsl:attribute name="role">presentation</xsl:attribute>
+              <a>
+                <xsl:attribute name="role">menuitem</xsl:attribute>
+                <xsl:attribute name="tabindex">-1</xsl:attribute>
+                <xsl:attribute name="href"><xsl:value-of select="./a/@href" /></xsl:attribute>
+                <xsl:value-of select="./a" />
+              </a>
+            </li>
+          </xsl:for-each>
         </ul>
       </xsl:if>
     </li>
