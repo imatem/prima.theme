@@ -1,5 +1,5 @@
 =============
-matem.reports
+prima.theme
 =============
 
 A Diazo theme for Plone
