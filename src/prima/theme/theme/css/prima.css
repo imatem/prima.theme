@@ -7,6 +7,10 @@ html body {
     font-size: 14px;
 }
 
+#portal-logo {
+  margin: 0;
+}
+
 #portal-globalnav {
   background-color: brown;
 }
