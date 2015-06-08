@@ -115,6 +115,13 @@ html body {
   font-size:2em;
 }
 
+#important-dates .contenttype-event{
+  display: inline;
+  line-height: 1em;
+  padding-left: 0 !important;
+  background: none;
+}
+
 .flexslider {
   margin-bottom: 0;
 }
