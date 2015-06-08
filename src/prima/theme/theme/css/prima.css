@@ -129,3 +129,8 @@ html body {
 .icon-bar {
   background-color: white;
 }
+
+.speakers td{
+  padding: 10px;
+
+}
