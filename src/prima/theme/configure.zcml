@@ -18,12 +18,6 @@
         name="prima.theme"
         />
 
-    <plone:static
-        directory="plone4"
-        type="theme"
-        name="prima"
-        />
-
     <genericsetup:registerProfile
         name="default"
         title="prima.theme"
