@@ -110,7 +110,6 @@ html body {
 
 #important-dates {
   background-color: white;
-  min-height: 359px;
 }
 
 #important-dates .portletFooter{
@@ -145,17 +144,20 @@ html body {
 
 }
 
+.jumbotron p{
+  font-size: 18px;
+}
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
 @media screen and (max-width: 1200px) {
-  #important-dates {
-    min-height: 292px;
+  .jumbotron p{
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  #important-dates {
-    min-height: inherit;
+  .jumbotron p{
+    font-size: 18px;
   }
 }

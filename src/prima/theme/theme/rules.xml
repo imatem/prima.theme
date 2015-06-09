@@ -152,8 +152,13 @@
       css:theme-children="#pscientific-program"
       />
 
-    <replace
+<!--     <replace
       css:content-children="dl.portlet-collection-important-dates"
+      css:theme-children="#important-dates"
+      /> -->
+
+    <replace
+      css:content-children="dl.portlet-static-prima-2017"
       css:theme-children="#important-dates"
       />
 
