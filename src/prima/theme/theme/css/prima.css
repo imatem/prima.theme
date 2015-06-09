@@ -105,6 +105,7 @@ html body {
 .portletItemDetails{
   float: right;
   color: black;
+  display: none;
 }
 
 #important-dates {
