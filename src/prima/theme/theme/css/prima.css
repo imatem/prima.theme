@@ -107,6 +107,11 @@ html body {
   color: black;
 }
 
+#important-dates {
+  background-color: white;
+  min-height: 359px;
+}
+
 #important-dates .portletFooter{
   font-size:0;
 }
@@ -137,4 +142,19 @@ html body {
 .speakers td{
   padding: 10px;
 
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 1200px) {
+  #important-dates {
+    min-height: 292px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #important-dates {
+    min-height: inherit;
+  }
 }
